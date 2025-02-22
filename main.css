@@ -1,0 +1,164 @@
+:root {
+  --green: rgb(84, 230, 175);
+  --dark-gray: rgb(44, 52, 75);
+  --black: rgb(18, 23, 37);
+  --white: rgb(255, 255, 255);
+  --charcoal: rgb(44, 52, 75);
+  --light-gray: rgb(194, 203, 229);
+  --icons: rgb(90, 102, 138);
+
+  --font-family: "Chivo", Arial, sans-serif;
+  --font-style: normal;
+
+  --font-light: 300;
+}
+
+*,
+*::before,
+*::after {
+  margin: 0;
+  padding: 0;
+}
+
+html,
+body {
+  font-size: 16px;
+}
+
+body {
+  background-color: var(--black);
+  display: flex;
+  justify-content: center;
+}
+
+/* ***** Mobile Styles ***** */
+
+body {
+  min-height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.content-wrapper {
+  display: flex;
+  flex-direction: column;
+  width: 23.43rem;
+  height: 41.68rem;
+}
+
+header {
+  display: flex;
+  justify-content: center;
+  margin-top: 62px;
+}
+
+section {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin: 57px 24px 33px 24px;
+}
+
+section h2 {
+  font-family: var(--font-family);
+  font-weight: var(--font-light);
+  text-transform: uppercase;
+  margin-bottom: 1rem;
+}
+
+.highlight {
+  color: var(--green);
+}
+
+/* Selects the word Everywhere */
+section > h2 > p {
+  display: flex;
+  justify-content: center;
+  color: var(--white);
+  margin-top: 0.62rem;
+}
+
+/* Selects the paragraph of text */
+section > p:nth-child(2) {
+  font-family: var(--font-family);
+  font-style: var(--font-style);
+  font-weight: var(--font-light);
+  font-size: 15px;
+  line-height: 25px;
+  text-align: center;
+  color: var(--light-gray);
+  width: 20.43rem;
+  height: 6.25rem;
+}
+
+.platforms {
+  display: flex;
+  justify-content: space-around;
+  margin: 0 24px 48px 24px;
+}
+
+#spotify {
+  width: 56px;
+  height: 17px;
+  opacity: 0.5;
+}
+
+#apple {
+  width: 45px;
+  height: 17px;
+  opacity: 0.5;
+}
+
+#google {
+  width: 4.56rem;
+  height: 0.68rem;
+  opacity: 0.5;
+}
+
+#pocket {
+  width: 77px;
+  height: 15px;
+  opacity: 0.5;
+}
+
+form {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: center;
+  height: 115px;
+}
+
+input,
+button {
+  width: 20.5rem;
+  height: 2.87rem;
+  border-radius: 28px;
+}
+
+input {
+  border: none;
+  text-align: center;
+  background: var(--dark-gray);
+  color: var(--white);
+  opacity: 0.5;
+  font-size: 14px;
+}
+
+input::placeholder {
+  padding: 30px;
+  font-family: var(--font-family);
+  mix-blend-mode: normal;
+  color: var(--white);
+  text-align: left;
+}
+
+button {
+  box-shadow: 0px 25px 20px -20px rgba(84, 230, 175, 0.497913);
+  background-color: var(--green);
+  font-family: var(--font-family) !important;
+  font-style: normal;
+  color: var(--black);
+  font-weight: 700;
+}
